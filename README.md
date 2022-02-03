@@ -9,6 +9,6 @@ The stepper motors are driven by an A9488 motor driver chip, which in turn
 is controlled by an Arduino Mega 2560 pro.  The Arduino also controls a 3.5"
 LCD display and a rotary encode for track selection.
 
-The Arduino processor can be found at [here](ttps://uk.banggood.com/RobotDyn-Mega-2560-PRO-(Embed)-CH340G-ATmega2560-16AU-Development-Module-Board-With-Pin-Headers-p-1397734.html?utm_source=googleshopping&utm_medium=cpc_organic&gmcCountry=GB&utm_content=minha&utm_campaign=minha-gbg-en-pc&currency=GBP&cur_warehouse=UK&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgcs&utm_content=tanya&utm_campaign=tanya-ssc-gbg-all-11sale-21-1020&ad_id=554443338711&gclid=EAIaIQobChMI-K-o_5Dk9QIV5ejtCh2nvwkXEAYYASABEgLbkPD_BwE).
+The Arduino processor can be found [here](ttps://uk.banggood.com/RobotDyn-Mega-2560-PRO-(Embed)-CH340G-ATmega2560-16AU-Development-Module-Board-With-Pin-Headers-p-1397734.html?utm_source=googleshopping&utm_medium=cpc_organic&gmcCountry=GB&utm_content=minha&utm_campaign=minha-gbg-en-pc&currency=GBP&cur_warehouse=UK&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgcs&utm_content=tanya&utm_campaign=tanya-ssc-gbg-all-11sale-21-1020&ad_id=554443338711&gclid=EAIaIQobChMI-K-o_5Dk9QIV5ejtCh2nvwkXEAYYASABEgLbkPD_BwE).
 
 
