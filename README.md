@@ -5,7 +5,7 @@ railway Traverser.  The traverer concerned is 54" long bu 18" wide and
 runs on two drawer runners.  The traverser table is driven by two stepper 
 motors connected by flexible couplings to two lead screws.
 
-The stepper motors are driven by an A9488 motor driver chip, which in turn
+The stepper motors are driven by an A4988 motor driver chip, which in turn
 is controlled by an Arduino Mega 2560 pro.  The Arduino also controls a 3.5"
 LCD display and a rotary encode for track selection.
 
