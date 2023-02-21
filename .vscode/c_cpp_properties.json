@@ -1,0 +1,66 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/include",
+                "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/src",
+                "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/StepperDriver/src",
+                "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/TFT_ILI9341",
+                "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/RF24",
+                "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/RF24/utility",
+                "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/EasyButton/src",
+                "C:/Users/Colin/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/Colin/.platformio/packages/framework-arduino-avr/variants/mega",
+                "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/include",
+                    "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/src",
+                    "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/StepperDriver/src",
+                    "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/TFT_ILI9341",
+                    "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/RF24",
+                    "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/RF24/utility",
+                    "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "c:/Users/Colin/Documents/PlatformIO/Projects/Nantyderry Traverser Version 4/.pio/libdeps/megaatmega2560/EasyButton/src",
+                    "C:/Users/Colin/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/Colin/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/Colin/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60106",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/Users/Colin/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

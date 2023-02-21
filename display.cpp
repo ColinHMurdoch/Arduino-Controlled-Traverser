@@ -1,7 +1,8 @@
 #include <Arduino.h>
 
-#include "filestruct.h"
 #include "display.h"
+#include "filestruct.h"
+
 #include <TFT_ILI9341.h> // Hardware-specific library
 #include <SPI.h>
 
@@ -19,6 +20,7 @@ void SetUpDisplay() {
   
   // Clear the buffer.
   Serial.println("Clearing Display");
+  
   tft.init();
   tft.setRotation(2);
   tft.fillScreen(TFT_BLACK);
@@ -38,6 +40,20 @@ void showmsgXY(int x, int y, int sz, char colour, char *msg)
   
 }
 
+void showProgressMessage(char *msg) {
+
+    ClearSelections();
+    tft.setTextColor(TFT_ORANGE);
+    tft.fillRect(48, 200, 190, 50, TFT_BLACK);
+    tft.setTextSize(4);   
+    tft.setCursor(40, 200);
+    tft.print(msg);
+
+}
+
+void ClearProgressMessage(){
+     tft.fillRect(40, 200, 190, 50, TFT_BLACK);
+}
 
 void ShowSelections() {
   
@@ -59,6 +75,7 @@ void ClearSelections() {
 }
 
 void ShowCurrentTracks() {
+
     tft.setTextColor(TFT_MAGENTA);
     tft.fillRect(48, 115, 60, 50, TFT_BLACK);
     tft.setTextSize(5);
@@ -85,13 +102,15 @@ void FlashTrack() {
 }
 
 void FlashMessage() {
-
+  // first blank the area
+  tft.fillRect(40, 200, 190, 50, TFT_BLACK);
+  // then sort the timer
   unsigned long thisMillis = millis();
   
   if(thisMillis - LastFlash >= interval) {
     LastFlash = thisMillis;
     if (FlashState == LOW){
-    showmsgXY(40, 200, 4, TFT_MAGENTA, "RUNNING");
+    showmsgXY(40, 200, 4, TFT_YELLOW, "RUNNING");
     FlashState = HIGH;
     }
     else {
@@ -104,9 +123,7 @@ void FlashMessage() {
 void ResetTrack(int selection) {
   UpLine = selection;
   DownLine = UpLine + 1;
-  ShowSelections();
-  //delay(200); // To avoid double or triple press
-  
+  ShowCurrentTracks();
 }
 
 void DrawInitialScreen() {
@@ -117,7 +134,7 @@ void DrawInitialScreen() {
     showmsgXY(1, 65, 2, TFT_WHITE, "   Current Tracks");
     showmsgXY(1, 90, 2, TFT_WHITE, "    UP      DOWN");
   
-    Serial.print("Drawing Screen");
+    Serial.println("Drawing Screen");
     ShowCurrentTracks();
 
     tft.drawFastHLine(0, 165, tft.width(), TFT_WHITE);

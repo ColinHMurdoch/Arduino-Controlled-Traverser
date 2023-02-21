@@ -1,6 +1,8 @@
 #ifndef FILESTRUCT_H  
 #define FILESTRUCT_H  
 
+#define LIMITFORWARD_PIN 18
+#define LIMITBACKWARD_PIN 16
 
 struct SLAVE_DATA{
     int Scommand;  // 2 bytes
@@ -21,6 +23,8 @@ extern bool TraverserRunning;
 extern bool TraverserStopped;
 extern long IncompletedSteps;
 extern bool TravelButtonPressed;
+extern bool LIMITFORWARDbuttonpressed;
+extern bool LIMITBACKWARDbuttonpressed;
 
 //extern unsigned long NextActionTime;
 
