@@ -11,4 +11,9 @@ LCD display and a rotary encode for track selection.
 
 The Arduino processor can be found [here](https://uk.banggood.com/RobotDyn-Mega-2560-PRO-(Embed)-CH340G-ATmega2560-16AU-Development-Module-Board-With-Pin-Headers-p-1397734.html?utm_source=googleshopping&utm_medium=cpc_organic&gmcCountry=GB&utm_content=minha&utm_campaign=minha-gbg-en-pc&currency=GBP&cur_warehouse=UK&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgcs&utm_content=tanya&utm_campaign=tanya-ssc-gbg-all-11sale-21-1020&ad_id=554443338711&gclid=EAIaIQobChMI-K-o_5Dk9QIV5ejtCh2nvwkXEAYYASABEgLbkPD_BwE).
 
+The libraries in use in this project can be found in .pio/libdeps/megaatmega2560.  
+If copying the code to use in the Arduino IDE these will need to be copied to the 
+libraries folder.
+
+The pinouts for the SPI TFT screen and the A4988 stepper driver can be ascertained from the code.
 
